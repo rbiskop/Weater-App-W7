@@ -10,6 +10,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script
       src="https://kit.fontawesome.com/5ecd6b04e3.js"
       crossorigin="anonymous"
@@ -22,13 +23,15 @@
       <div class="weather-app">
         <div class="weatherInfo">
           <div class="row">
-            <h1>City</h1>
+            <h1 id="city"></h1>
             <div class="col-6">
               <ul>
-                <li><span>Day 18:23</span>, clear sky</li>
+                <li>Day 18:23</li>
+                <li id="weather-description">clear sky</li>
+                <li>Humidity: <span id="humidity"></span></li>
                 <li>
-                  Humidity: <strong>56%</strong>, Wind:
-                  <strong>8.49km/h</strong>
+                  Wind:
+                  <spann id="speed">8.49</spann>km/h
                 </li>
               </ul>
             </div>
@@ -38,7 +41,7 @@
                   src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
                   alt="Clear"
                 />
-                <span class="temperature">18</span>
+                <span class="current-temperature" id="temperature">18</span>
                 <span class="units">°C | <a href="#">°F</a></span>
               </div>
             </div>

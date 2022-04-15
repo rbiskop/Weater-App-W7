@@ -18,10 +18,15 @@ li {
   list-style: none;
   margin: 0;
   padding: 0;
+  text-transform: capitalize;
   color: #878787;
   font-size: 16px;
   font-weight: 100;
   line-height: 19px;
+}
+
+a {
+  text-decoration: none;
 }
 .weather-app {
   max-width: 600px;
@@ -38,7 +43,7 @@ li {
   height: 64px;
   width: 64px;
 }
-.temperature-container .temperature {
+.temperature-container .current-temperature {
   color: #212121;
   font-weight: 400;
   font-size: 64px;
