@@ -9,6 +9,7 @@ h1 {
   line-height: 29px;
   margin-bottom: 0px;
 }
+
 ul {
   margin: 0;
   padding: 0;
@@ -31,7 +32,20 @@ li:first-letter {
 a {
   text-decoration: none;
 }
-.weather-app {
+form {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  height: 81px;
+  line-height: 24px;
+  margin-top: 20px;
+  margin-right: 10px;
+  padding-bottom: 20px;
+  text-align: left;
+  text-size-adjust: 100%;
+}
+
+.weatherApp {
   max-width: 600px;
   margin: 30px auto;
 }
