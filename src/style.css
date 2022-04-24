@@ -1,13 +1,22 @@
 body {
   font-family: Arial, sans-serif;
+  background-color: #00bbd41a;
 }
 
 h1 {
   color: #151616;
   font-size: 24px;
-  font-weight: 100;
-  line-height: 29px;
+  font-weight: bold;
+  line-height: 30px;
   margin-bottom: 0px;
+}
+
+h3 {
+  font-size: 12.5px;
+  font-style: oblique;
+  margin-bottom: 0px;
+  color: #757575;
+  text-align: left;
 }
 
 ul {
@@ -29,8 +38,14 @@ li:first-letter {
   text-transform: capitalize;
 }
 
+hr {
+  margin-top: 0px;
+  color: #ff5722;
+}
+
 a {
   text-decoration: none;
+  color: #ff5722;
 }
 
 form {
@@ -45,14 +60,29 @@ form {
   text-size-adjust: 100%;
 }
 
+footer {
+  font-size: 10px;
+  margin-top: 25px;
+  margin-left: 3px;
+  text-align: center;
+  color: #bdbdbd;
+}
+
 .weather-app {
   max-width: 600px;
   margin: 30px auto;
 }
 .weather-info {
   padding: 20px;
-  border: 1px solid #dadde1;
+  border: 1px solid #ffffff;
   border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.search-input {
+  background-color: #00bbd40a;
+  border: 1px solid #00bbd411;
+  color: #dadde1b2;
 }
 
 .temperature-container img {
@@ -61,9 +91,27 @@ form {
   width: 64px;
 }
 
+.btn {
+  background-color: #00bcd4;
+  border: 1px solid #ff5622a4;
+  color: #ffffff;
+}
+
+.btn:hover {
+  background-color: #ff5622a4;
+  border: 1px solid #ff5622a4;
+  font-style: oblique;
+  transition: ease-in-out all 100ms;
+}
+
+#weather-description {
+  color: #00bcd4;
+  font-weight: bolder;
+}
+
 .temperature-container .active {
   color: #212121;
-  cursor: default;
+  margin-right: 20px;
 }
 
 .temperature-container .current-temperature {
@@ -78,19 +126,25 @@ form {
   line-height: 1;
 }
 
-.weather-forecast {
-  margin-top: 30px;
+#forecast {
   text-align: center;
-  color: #878787;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #dadde1b2;
+  border-radius: 5px;
 }
 
 .weather-forecast-date {
   font-size: 16px;
   opacity: 0.5;
-  margin-top: 20px;
+}
+
+.weather-forecast-temperature-max {
+  color: #ff5722;
 }
 .weather-forecast-temperature-min {
-  opacity: 0.5;
+  color: #ff56226b;
 }
 
 .weather-forecast-temperature {

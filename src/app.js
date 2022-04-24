@@ -62,7 +62,11 @@ function displayForecast(response) {
     }
   });
 
-  forecastHTML = forecastHTML + `</div>`;
+  forecastHTML =
+    `<h3>Weather in the upcoming days</h3>
+          <hr />` +
+    forecastHTML +
+    `</div>`;
   forecastElement.innerHTML = forecastHTML;
 }
 
