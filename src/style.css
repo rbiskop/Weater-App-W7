@@ -45,11 +45,11 @@ form {
   text-size-adjust: 100%;
 }
 
-.weatherApp {
+.weather-app {
   max-width: 600px;
   margin: 30px auto;
 }
-.weatherInfo {
+.weather-info {
   padding: 20px;
   border: 1px solid #dadde1;
   border-radius: 5px;
@@ -79,7 +79,7 @@ form {
 }
 
 .weather-forecast {
-  margin-top: 20px;
+  margin-top: 30px;
   text-align: center;
   color: #878787;
 }
@@ -87,6 +87,7 @@ form {
 .weather-forecast-date {
   font-size: 16px;
   opacity: 0.5;
+  margin-top: 20px;
 }
 .weather-forecast-temperature-min {
   opacity: 0.5;
